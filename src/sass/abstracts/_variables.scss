@@ -4,6 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Figtree&family=Poiret+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 $bg-color: floralwhite;
 $bg-very-light: func.tint($bg-color, 50%);
 $bg-light: func.tint($bg-color, 25%);
@@ -12,7 +16,7 @@ $bg-dark: func.shade($bg-color, 25%);
 $bg-very-dark: func.shade($bg-color, 50%);
 
 
-$primary-color: midnightblue;
+$primary-color: rgb(212, 243, 226);
 $primary-very-light: func.tint($primary-color, 50%);
 $primary-light: func.tint($primary-color, 25%);
 $primary-medium: $primary-color;
@@ -24,3 +28,5 @@ $primary-very-dark: func.shade($primary-color, 50%);
 $accent-font: 'Poiret One', cursive;
 $general-header-font: 'Poiret One', cursive;
 $body-text-font: 'Figtree', sans-serif;
+$big-header-font: 'Galada', cursive;
+$small-header-font: 'Courgette', cursive;

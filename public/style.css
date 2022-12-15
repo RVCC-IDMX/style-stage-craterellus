@@ -1,0 +1,86 @@
+/* variables */
+@import url("https://fonts.googleapis.com/css2?family=Figtree&family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Galada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+/* functions */
+/* Fonts */
+/* main */
+body {
+  background-image: radial-gradient(circle at 67% 83%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 1%, transparent 1%, transparent 5%, transparent 5%, transparent 100%), radial-gradient(circle at 24% 80%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 27%, transparent 27%, transparent 63%, transparent 63%, transparent 100%), radial-gradient(circle at 23% 5%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 26%, transparent 26%, transparent 82%, transparent 82%, transparent 100%), radial-gradient(circle at 21% 11%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 35%, transparent 35%, transparent 45%, transparent 45%, transparent 100%), radial-gradient(circle at 10% 11%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 21%, transparent 21%, transparent 81%, transparent 81%, transparent 100%), radial-gradient(circle at 19% 61%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 20%, transparent 20%, transparent 61%, transparent 61%, transparent 100%), radial-gradient(circle at 13% 77%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 63%, transparent 63%, transparent 72%, transparent 72%, transparent 100%), radial-gradient(circle at 30% 93%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 33%, transparent 33%, transparent 82%, transparent 82%, transparent 100%), linear-gradient(90deg, rgb(22, 207, 188), rgb(45, 26, 133));
+}
+
+/*Spacing*/
+body {
+  padding: 0 1em;
+  max-width: 60rem;
+}
+
+p, li {
+  max-width: 55ch;
+}
+
+p {
+  padding-block: 1em;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+}
+
+/* Images */
+svg {
+  max-width: 1rem;
+}
+
+/* Colors */
+body {
+  color: rgb(212, 243, 226);
+}
+
+/*Typography*/
+body {
+  font-family: "Figtree", sans-serif;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-family: "Galada", cursive;
+  font-size: clamp(5.5rem, 2rem + 13vw, 10rem);
+  line-height: 0.9em;
+  letter-spacing: -0.3rem;
+  margin: 0;
+  padding-block-start: 3rem;
+}
+
+h2, h3, h4 {
+  font-family: "Courgette", cursive;
+  line-height: 1em;
+}
+
+h2 {
+  font-size: clamp(2rem, 1rem + 5vw, 2.7rem);
+  max-width: 50rem;
+}
+
+h3, h4 {
+  font-size: 1.7rem;
+}
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  opacity: 0;
+}
+
+.skip-link:focus {
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
