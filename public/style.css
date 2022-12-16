@@ -172,10 +172,12 @@ nav ul li {
 }
 nav ul li a:hover {
   background-color: rgba(13, 11, 29, 0.4);
-  color: rgb(126, 237, 226);
+  color: rgb(212, 243, 226);
+  text-decoration: none;
 }
 nav ul li a:visited {
   color: rgb(212, 243, 226);
+  text-decoration: none;
 }
 nav ul li a {
   text-decoration: none;
@@ -221,3 +223,11 @@ a:active {
 }
 
 /*Footer*/
+/* Images */
+/*Grid*/
+section.container ul {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.2rem;
+}

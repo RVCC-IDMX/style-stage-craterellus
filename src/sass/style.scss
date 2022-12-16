@@ -122,10 +122,12 @@ nav {
             padding-block: .8rem;
             a:hover {
                 background-color: rgba(13, 11, 29, 0.4);
-                color: rgb(126, 237, 226);
+                color: var.$primary-color;
+                text-decoration: none
             }
             a:visited {
                 color: var.$primary-color;
+                text-decoration: none
             }
 
         }
@@ -181,3 +183,19 @@ a:active {
 //     padding: 1rem;
 // }
 
+/* Images */
+
+// h2::after {
+//     content: '✧';
+//     padding: 5px;
+// }
+
+/*Grid*/
+section.container {
+    ul {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: .2rem;
+    }
+}
