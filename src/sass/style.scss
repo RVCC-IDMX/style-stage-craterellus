@@ -8,7 +8,7 @@ body {
     background-image: radial-gradient(circle at 67% 83%, rgba(71,40,40, 0.1) 0%, rgba(71,40,40, 0.1) 1%,transparent 1%, transparent 5%,transparent 5%, transparent 100%),radial-gradient(circle at 24% 80%, rgba(71,40,40, 0.1) 0%, rgba(71,40,40, 0.1) 27%,transparent 27%, transparent 63%,transparent 63%, transparent 100%),radial-gradient(circle at 23% 5%, rgba(71,40,40, 0.1) 0%, rgba(71,40,40, 0.1) 26%,transparent 26%, transparent 82%,transparent 82%, transparent 100%),radial-gradient(circle at 21% 11%, rgba(71,40,40, 0.1) 0%, rgba(71,40,40, 0.1) 35%,transparent 35%, transparent 45%,transparent 45%, transparent 100%),radial-gradient(circle at 10% 11%, rgba(71,40,40, 0.1) 0%, rgba(71,40,40, 0.1) 21%,transparent 21%, transparent 81%,transparent 81%, transparent 100%),radial-gradient(circle at 19% 61%, rgba(71,40,40, 0.1) 0%, rgba(71,40,40, 0.1) 20%,transparent 20%, transparent 61%,transparent 61%, transparent 100%),radial-gradient(circle at 13% 77%, rgba(71,40,40, 0.1) 0%, rgba(71,40,40, 0.1) 63%,transparent 63%, transparent 72%,transparent 72%, transparent 100%),radial-gradient(circle at 30% 93%, rgba(71,40,40, 0.1) 0%, rgba(71,40,40, 0.1) 33%,transparent 33%, transparent 82%,transparent 82%, transparent 100%),linear-gradient(90deg, rgb(22,207,188),rgb(45,26,133));
 }
 
-/*Sections*/
+/*Sections: Uniform Styling*/
 
 article, footer, aside {
     background:rgba(35, 11, 11, 0.3);
@@ -101,6 +101,35 @@ max-width: 50rem;
 h3, h4 {
     font-size: clamp(1.7rem, 1.279rem + 2.105vw, 2.2rem);
     margin-block: .5rem;
+}
+
+/* Nav */
+
+nav {
+    margin-block: 2rem;
+    background: rgba(35, 11, 11, 0.3);
+    border: 1px solid white;
+    ul {
+        list-style: none;
+        font-family: var.$big-header-font;
+        font-size: 2rem;
+        text-align: center;
+        padding:none;
+        li {
+            display: inline-block;
+            line-height: 1.1em;
+            padding-block: .8rem;
+            a:hover {
+                background-color: rgba(13, 11, 29, 0.4);
+                color: rgb(126, 237, 226);
+            }
+        }
+        li a {
+            text-decoration: none;
+            padding: .3rem;
+            color: white;
+        }
+    }
 }
 
 /* Skip Link */
