@@ -57,6 +57,7 @@ table {
 }
 
 /* functions */
+/*Link Colors*/
 /* Fonts */
 /* main */
 /*Backgrounds*/
@@ -173,10 +174,33 @@ nav ul li a:hover {
   background-color: rgba(13, 11, 29, 0.4);
   color: rgb(126, 237, 226);
 }
+nav ul li a:visited {
+  color: rgb(212, 243, 226);
+}
 nav ul li a {
   text-decoration: none;
   padding: 0.3rem;
   color: rgb(212, 243, 226);
+}
+
+/*Links*/
+a {
+  color: rgb(253, 194, 178);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: rgb(124, 243, 247);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: rgb(171, 182, 251);
+}
+
+a:active {
+  color: rgb(253, 194, 178);
 }
 
 /* Skip Link */

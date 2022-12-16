@@ -23,6 +23,11 @@ $primary-medium: $primary-color;
 $primary-dark: func.shade($primary-color, 25%);
 $primary-very-dark: func.shade($primary-color, 50%);
 
+/*Link Colors*/
+$unvisited-color: rgb(253, 194, 178);
+$hover-color: rgb(124, 243, 247);
+$visited-color: rgb(171, 182, 251);
+
 
 /* Fonts */
 $accent-font: 'Poiret One', cursive;
