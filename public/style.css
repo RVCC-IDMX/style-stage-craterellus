@@ -1,5 +1,6 @@
+@charset "UTF-8";
 /* variables */
-@import url("https://fonts.googleapis.com/css2?family=Figtree&family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Galada&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -65,13 +66,11 @@ body {
   background-image: radial-gradient(circle at 67% 83%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 1%, transparent 1%, transparent 5%, transparent 5%, transparent 100%), radial-gradient(circle at 24% 80%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 27%, transparent 27%, transparent 63%, transparent 63%, transparent 100%), radial-gradient(circle at 23% 5%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 26%, transparent 26%, transparent 82%, transparent 82%, transparent 100%), radial-gradient(circle at 21% 11%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 35%, transparent 35%, transparent 45%, transparent 45%, transparent 100%), radial-gradient(circle at 10% 11%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 21%, transparent 21%, transparent 81%, transparent 81%, transparent 100%), radial-gradient(circle at 19% 61%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 20%, transparent 20%, transparent 61%, transparent 61%, transparent 100%), radial-gradient(circle at 13% 77%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 63%, transparent 63%, transparent 72%, transparent 72%, transparent 100%), radial-gradient(circle at 30% 93%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 33%, transparent 33%, transparent 82%, transparent 82%, transparent 100%), linear-gradient(90deg, rgb(22, 207, 188), rgb(45, 26, 133));
 }
 
-/*Sections: Uniform Styling*/
 /*Spacing*/
 body {
-  margin-inline: auto;
   margin-block-start: clamp(0.5rem, -0.214rem + 3.571vw, 3rem);
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
 }
 
 p {
@@ -79,8 +78,9 @@ p {
 }
 
 header {
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: 4;
+  margin-inline-end: 2rem;
 }
 
 nav {
@@ -127,7 +127,6 @@ h1 {
   font-size: clamp(5.5rem, 2rem + 13vw, 10em);
   line-height: 0.9em;
   letter-spacing: -0.3rem;
-  padding-block-start: 3rem;
   text-align: end;
   text-shadow: 4px 3px 0px rgb(26, 7, 7), 9px 8px 0px rgba(0, 0, 0, 0.15);
 }
@@ -167,7 +166,7 @@ nav {
 }
 nav ul {
   list-style: none;
-  font-family: "Galada", cursive;
+  font-family: "Courgette", cursive;
   font-size: 2rem;
   text-align: center;
   padding: none;
@@ -178,7 +177,7 @@ nav ul li {
   padding-block: 0.8rem;
 }
 nav ul li a:hover {
-  background-color: rgba(13, 11, 29, 0.4);
+  background-color: rgba(35, 11, 11, 0.4);
   color: rgb(212, 243, 226);
   text-decoration: none;
 }
@@ -229,9 +228,13 @@ a:active {
   opacity: 1;
 }
 
-/*Footer*/
 /* Images */
-/*Grid*/
+h1::before {
+  content: "✨";
+  opacity: 0.7;
+}
+
+/*Grid: Modern CSS Spotlight*/
 section.container ul {
   text-align: center;
   display: grid;

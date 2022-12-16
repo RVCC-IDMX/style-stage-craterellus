@@ -2,7 +2,7 @@
 
 @use "./functions" as func;
 
-@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
 
@@ -23,6 +23,9 @@ $primary-medium: $primary-color;
 $primary-dark: func.shade($primary-color, 25%);
 $primary-very-dark: func.shade($primary-color, 50%);
 
+$bg-overlay: rgba(35, 11, 11, 0.3);
+$bg-overlay-darker: rgba(35, 11, 11, 0.4);
+
 /*Link Colors*/
 $unvisited-color: rgb(253, 194, 178);
 $hover-color: rgb(124, 243, 247);
@@ -30,8 +33,6 @@ $visited-color: rgb(171, 182, 251);
 
 
 /* Fonts */
-$accent-font: 'Poiret One', cursive;
-$general-header-font: 'Poiret One', cursive;
 $body-text-font: 'Figtree', sans-serif;
 $big-header-font: 'Galada', cursive;
 $small-header-font: 'Courgette', cursive;
