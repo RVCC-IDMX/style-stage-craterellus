@@ -10,31 +10,73 @@ body {
 
 /*Sections: Uniform Styling*/
 
-article, footer, aside {
-    background:rgba(35, 11, 11, 0.3);
-    margin-block-end: 2rem;
-    padding: 1rem;
-    margin-inline: auto;
-}
+// article, footer, aside {
+//     background:rgba(35, 11, 11, 0.3);
+//     margin-block-end: 2rem;
+//     width: 100%;
+//     padding: 1rem;
+//     margin-inline: auto;
+// }
 
 
 /*Spacing*/
 body {
-    max-width: 50rem;
     margin-inline: auto;
     margin-block-start: clamp(0.5rem, -0.214rem + 3.571vw, 3rem);
-}
-
-header {
-    padding-inline: clamp(0.7rem, -0.395rem + 5.474vw, 2rem);
-}
-
-p, li {
-    max-width: 60ch;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
 p {
     padding-block-end: clamp(1.2rem, 0.526rem + 3.368vw, 2rem);
+}
+
+
+
+header {
+    // padding-inline: clamp(0.7rem, -0.395rem + 5.474vw, 2rem);
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+nav {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+main, aside, footer {
+    background:rgba(35, 11, 11, 0.3);
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+
+// #about, #guidelines, #contribute {
+//     background:rgba(35, 11, 11, 0.3);
+// }
+
+// #about {
+//     .container {
+//         max-width: 70ch;
+//         margin-inline: auto;
+//     }
+// }
+
+// aside.profile {
+//     background:rgba(108, 201, 254, 0.3);
+//     display: grid;
+//     grid-template-columns: 1fr 3fr 1fr;
+//     .container {
+//         grid-column-start: 2;
+//         grid-column-end: 3;
+//     }
+// }
+
+
+
+
+p, li {
+    max-width: 60ch;
 }
 
 h1 {
@@ -42,7 +84,6 @@ h1 {
 }
 
 h2 {
-    margin-block: 1rem;
     border-bottom: 2px solid var.$primary-color;
 }
 
@@ -81,10 +122,12 @@ header {
     h2 {
         text-align: end;
         border: none;
+        max-width: 100%;
     }
     p {
         font-size: 1.2rem;
         text-align: end;
+        max-width: 100%;
     }
 }
 
@@ -107,7 +150,7 @@ h3, h4 {
 /* Nav */
 
 nav {
-    margin-block: 2rem;
+    margin-block: 3rem;
     background: rgba(35, 11, 11, 0.3);
     border: 1px solid white;
     ul {
