@@ -2,6 +2,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree&family=Poiret+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Galada&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 /* functions */
 /* Fonts */
 /* main */
@@ -10,20 +64,17 @@ body {
   background-image: radial-gradient(circle at 67% 83%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 1%, transparent 1%, transparent 5%, transparent 5%, transparent 100%), radial-gradient(circle at 24% 80%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 27%, transparent 27%, transparent 63%, transparent 63%, transparent 100%), radial-gradient(circle at 23% 5%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 26%, transparent 26%, transparent 82%, transparent 82%, transparent 100%), radial-gradient(circle at 21% 11%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 35%, transparent 35%, transparent 45%, transparent 45%, transparent 100%), radial-gradient(circle at 10% 11%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 21%, transparent 21%, transparent 81%, transparent 81%, transparent 100%), radial-gradient(circle at 19% 61%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 20%, transparent 20%, transparent 61%, transparent 61%, transparent 100%), radial-gradient(circle at 13% 77%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 63%, transparent 63%, transparent 72%, transparent 72%, transparent 100%), radial-gradient(circle at 30% 93%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 33%, transparent 33%, transparent 82%, transparent 82%, transparent 100%), linear-gradient(90deg, rgb(22, 207, 188), rgb(45, 26, 133));
 }
 
-section.container, #files, .profile, #styles {
+/*Sections*/
+article, footer, aside {
   background: rgba(35, 11, 11, 0.3);
-  border: 0.2rem solid rgba(65, 206, 228, 0.5);
-  border-radius: 1rem;
   margin-block-end: 2rem;
   padding: 1rem;
-  max-width: 50rem;
   margin-inline: auto;
 }
 
 /*Spacing*/
 body {
-  padding: 0 1em;
-  max-width: 60rem;
+  max-width: 50rem;
   margin-inline: auto;
 }
 
@@ -101,9 +152,3 @@ h3, h4 {
 }
 
 /*Footer*/
-.page-footer {
-  background: rgba(0, 0, 0, 0.2);
-  border: 4px double whitesmoke;
-  margin-block-end: 2rem;
-  padding: 1rem;
-}
