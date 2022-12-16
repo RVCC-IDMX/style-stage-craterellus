@@ -22,6 +22,11 @@ article, footer, aside {
 body {
     max-width: 50rem;
     margin-inline: auto;
+    margin-block-start: clamp(0.5rem, -0.214rem + 3.571vw, 3rem);
+}
+
+header {
+    padding-inline: clamp(0.7rem, -0.395rem + 5.474vw, 2rem);
 }
 
 p, li {
@@ -29,8 +34,18 @@ p, li {
 }
 
 p {
-    padding-block: 1em;
+    padding-block-end: clamp(1.2rem, 0.526rem + 3.368vw, 2rem);
 }
+
+h1 {
+    margin-block-end: 3rem;
+}
+
+h2 {
+    margin-block: 1rem;
+    border-bottom: 2px solid var.$primary-color;
+}
+
 
 /* Images */
 
@@ -57,7 +72,6 @@ h1 {
     font-size: clamp(5.5rem, 2rem + 13vw, 10em);
     line-height: 0.9em;
     letter-spacing: -0.3rem;
-    margin: 0;
     padding-block-start: 3rem;
     text-align: end;
 }
@@ -65,6 +79,7 @@ h1 {
 header {
     h2 {
         text-align: end;
+        border: none;
     }
     p {
         font-size: 1.2rem;
@@ -75,15 +90,17 @@ header {
 h2, h3, h4 {
     font-family: var.$small-header-font;
     line-height: 1em;
+    letter-spacing: -0.1rem;
 }
 
 h2 {
-font-size: clamp(2rem, 1rem + 5vw, 2.7rem);
+font-size: clamp(2rem, 1.158rem + 4.211vw, 3rem);
 max-width: 50rem;
 }
 
 h3, h4 {
-    font-size: 1.7rem;
+    font-size: clamp(1.7rem, 1.279rem + 2.105vw, 2.2rem);
+    margin-block: .5rem;
 }
 
 /* Skip Link */
