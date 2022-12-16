@@ -123,6 +123,7 @@ h1 {
   letter-spacing: -0.3rem;
   padding-block-start: 3rem;
   text-align: end;
+  text-shadow: 4px 3px 0px rgb(26, 7, 7), 9px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
 header h2 {
@@ -175,7 +176,7 @@ nav ul li a:hover {
 nav ul li a {
   text-decoration: none;
   padding: 0.3rem;
-  color: white;
+  color: rgb(212, 243, 226);
 }
 
 /* Skip Link */
