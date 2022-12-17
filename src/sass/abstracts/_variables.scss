@@ -16,23 +16,27 @@ $bg-dark: func.shade($bg-color, 25%);
 $bg-very-dark: func.shade($bg-color, 50%);
 
 
-$primary-color: rgb(212, 243, 226);
+$primary-color: rgb(242, 239, 223);
 $primary-very-light: func.tint($primary-color, 50%);
 $primary-light: func.tint($primary-color, 25%);
 $primary-medium: $primary-color;
 $primary-dark: func.shade($primary-color, 25%);
 $primary-very-dark: func.shade($primary-color, 50%);
 
-$bg-overlay: rgba(35, 11, 11, 0.3);
-$bg-overlay-darker: rgba(35, 11, 11, 0.4);
+$bg-overlay: rgba(35, 11, 11, 0.5);
+$bg-overlay-darker: rgba(35, 11, 11, 0.6);
 
 /*Link Colors*/
-$unvisited-color: rgb(253, 194, 178);
+$unvisited-color: rgb(248, 252, 136);
 $hover-color: rgb(124, 243, 247);
-$visited-color: rgb(171, 182, 251);
+$visited-color: rgb(254, 221, 156);
 
 
 /* Fonts */
 $body-text-font: 'Figtree', sans-serif;
 $big-header-font: 'Galada', cursive;
 $small-header-font: 'Courgette', cursive;
+
+/*Font Size*/
+$header-size: clamp(5.5rem, 2rem + 13vw, 10em);
+$header-emoji-size: calc(clamp(5.5rem,($header-size),20vh) - 2rem);

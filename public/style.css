@@ -60,6 +60,7 @@ table {
 /* functions */
 /*Link Colors*/
 /* Fonts */
+/*Font Size*/
 /* main */
 /*Backgrounds*/
 body {
@@ -89,7 +90,7 @@ nav {
 }
 
 main, aside, footer {
-  background: rgba(35, 11, 11, 0.3);
+  background: rgba(35, 11, 11, 0.5);
   grid-column-start: 1;
   grid-column-end: 4;
 }
@@ -102,8 +103,9 @@ h1 {
   margin-block-end: 3rem;
 }
 
-h2 {
-  border-bottom: 2px solid rgb(212, 243, 226);
+header .container {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Images */
@@ -113,13 +115,14 @@ svg {
 
 /* Colors */
 body {
-  color: rgb(212, 243, 226);
+  color: rgb(242, 239, 223);
 }
 
 /*Typography*/
 body {
   font-family: "Figtree", sans-serif;
-  line-height: 1.5em;
+  line-height: 1.6em;
+  font-size: 1.1rem;
 }
 
 h1 {
@@ -151,6 +154,7 @@ h2, h3, h4 {
 h2 {
   font-size: clamp(2rem, 1.158rem + 4.211vw, 3rem);
   max-width: 50rem;
+  text-shadow: 3px 2px 0px rgb(26, 7, 7), 5px 3px 0px rgba(0, 0, 0, 0.15);
 }
 
 h3, h4 {
@@ -158,10 +162,14 @@ h3, h4 {
   margin-block: 0.5rem;
 }
 
+header .container a, header .container span, header .container p {
+  font-size: 1.5rem;
+}
+
 /* Nav */
 nav {
   margin-block: 3rem;
-  background: rgba(35, 11, 11, 0.3);
+  background: rgba(35, 11, 11, 0.5);
   border: 1px solid white;
 }
 nav ul {
@@ -177,23 +185,23 @@ nav ul li {
   padding-block: 0.8rem;
 }
 nav ul li a:hover {
-  background-color: rgba(35, 11, 11, 0.4);
-  color: rgb(212, 243, 226);
+  background-color: rgba(35, 11, 11, 0.6);
+  color: rgb(242, 239, 223);
   text-decoration: none;
 }
 nav ul li a:visited {
-  color: rgb(212, 243, 226);
+  color: rgb(242, 239, 223);
   text-decoration: none;
 }
 nav ul li a {
   text-decoration: none;
   padding: 0.3rem;
-  color: rgb(212, 243, 226);
+  color: rgb(242, 239, 223);
 }
 
 /*Links*/
 a {
-  color: rgb(253, 194, 178);
+  color: rgb(248, 252, 136);
   text-decoration: none;
   font-weight: bold;
 }
@@ -204,11 +212,11 @@ a:hover {
 }
 
 a:visited {
-  color: rgb(171, 182, 251);
+  color: rgb(254, 221, 156);
 }
 
 a:active {
-  color: rgb(253, 194, 178);
+  color: rgb(248, 252, 136);
 }
 
 /* Skip Link */
@@ -228,10 +236,14 @@ a:active {
   opacity: 1;
 }
 
+.container > a {
+  text-align: end;
+}
+
 /* Images */
 h1::before {
   content: "✨";
-  opacity: 0.7;
+  font-size: calc(clamp(5.5rem, clamp(5.5rem, 2rem + 13vw, 10em), 20vh) - 2rem);
 }
 
 /*Grid: Modern CSS Spotlight*/

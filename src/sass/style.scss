@@ -47,8 +47,12 @@ h1 {
     margin-block-end: 3rem;
 }
 
-h2 {
-    border-bottom: 2px solid var.$primary-color;
+header {
+    .container {
+        display: flex;
+        flex-direction: column;
+
+    }
 }
 
 
@@ -68,7 +72,8 @@ body {
 
 body {
     font-family: var.$body-text-font;
-    line-height: 1.5em;
+    line-height: 1.6em;
+    font-size: 1.1rem;
 }
 
 h1 {
@@ -102,11 +107,20 @@ h2, h3, h4 {
 h2 {
 font-size: clamp(2rem, 1.158rem + 4.211vw, 3rem);
 max-width: 50rem;
+text-shadow: 3px 2px 0px rgb(26, 7, 7), 5px 3px 0px rgba(0,0,0,0.15);
 }
 
 h3, h4 {
     font-size: clamp(1.7rem, 1.279rem + 2.105vw, 2.2rem);
     margin-block: .5rem;
+}
+
+header {
+    .container {
+        a, span, p {
+            font-size: 1.5rem;
+        }
+    }
 }
 
 /* Nav */
@@ -180,6 +194,10 @@ a:active {
   opacity: 1;
 }
 
+.container > a {
+    text-align: end;
+}
+
 
 /* Images */
 
@@ -192,7 +210,7 @@ a:active {
 
 h1::before {
     content: '✨';
-    opacity: 0.7;
+    font-size: var.$header-emoji-size;
 }
 
 
