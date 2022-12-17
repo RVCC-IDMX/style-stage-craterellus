@@ -5,15 +5,23 @@
 
 /*Backgrounds*/
 body {
-    background-image: radial-gradient(circle at 67% 83%, rgba(71,40,40, 0.1) 0%, rgba(71,40,40, 0.1) 1%,transparent 1%, transparent 5%,transparent 5%, transparent 100%),radial-gradient(circle at 24% 80%, rgba(71,40,40, 0.1) 0%, rgba(71,40,40, 0.1) 27%,transparent 27%, transparent 63%,transparent 63%, transparent 100%),radial-gradient(circle at 23% 5%, rgba(71,40,40, 0.1) 0%, rgba(71,40,40, 0.1) 26%,transparent 26%, transparent 82%,transparent 82%, transparent 100%),radial-gradient(circle at 21% 11%, rgba(71,40,40, 0.1) 0%, rgba(71,40,40, 0.1) 35%,transparent 35%, transparent 45%,transparent 45%, transparent 100%),radial-gradient(circle at 10% 11%, rgba(71,40,40, 0.1) 0%, rgba(71,40,40, 0.1) 21%,transparent 21%, transparent 81%,transparent 81%, transparent 100%),radial-gradient(circle at 19% 61%, rgba(71,40,40, 0.1) 0%, rgba(71,40,40, 0.1) 20%,transparent 20%, transparent 61%,transparent 61%, transparent 100%),radial-gradient(circle at 13% 77%, rgba(71,40,40, 0.1) 0%, rgba(71,40,40, 0.1) 63%,transparent 63%, transparent 72%,transparent 72%, transparent 100%),radial-gradient(circle at 30% 93%, rgba(71,40,40, 0.1) 0%, rgba(71,40,40, 0.1) 33%,transparent 33%, transparent 82%,transparent 82%, transparent 100%),linear-gradient(90deg, rgb(22,207,188),rgb(45,26,133));
+    background-image: var.$bg-color;
 }
 
+header {
+    background-image: var.$bg-header-color;
+}
 
 /*Spacing*/
+
 body {
-    margin-block-start: clamp(0.5rem, -0.214rem + 3.571vw, 3rem);
+    margin-block-start: clamp(2rem, 0.545rem + 7.273vw, 6rem);
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+}
+
+body > * {
+    padding-inline: clamp(1rem, -0.818rem + 9.091vw, 6rem);
 }
 
 p {
@@ -25,7 +33,6 @@ p {
 header {
     grid-column-start: 1;
     grid-column-end: 4;
-    margin-inline-end: 2rem;
 }
 
 nav {
@@ -34,7 +41,6 @@ nav {
 }
 
 main, aside, footer {
-    background:var.$bg-overlay;
     grid-column-start: 1;
     grid-column-end: 4;
 }
@@ -78,8 +84,8 @@ body {
 
 h1 {
     font-family: var.$big-header-font;
-    font-size: clamp(5.5rem, 2rem + 13vw, 10em);
-    line-height: 0.9em;
+    font-size: clamp(6rem, 3.091rem + 14.545vw, 14rem);
+    line-height: 0.7em;
     letter-spacing: -0.3rem;
     text-align: end;
     text-shadow: 4px 3px 0px rgb(26, 7, 7), 9px 8px 0px rgba(0,0,0,0.15);
@@ -90,6 +96,8 @@ header {
         text-align: end;
         border: none;
         max-width: 100%;
+        padding-block-end: clamp(1rem, -0.091rem + 5.455vw, 4rem);
+        
     }
     p {
         font-size: 1.2rem;
@@ -127,7 +135,6 @@ header {
 
 nav {
     margin-block: 3rem;
-    background: var.$bg-overlay;
     border: 1px solid white;
     ul {
         list-style: none;

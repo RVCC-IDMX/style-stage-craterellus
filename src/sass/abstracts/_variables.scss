@@ -8,12 +8,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
-$bg-color: floralwhite;
-$bg-very-light: func.tint($bg-color, 50%);
-$bg-light: func.tint($bg-color, 25%);
-$bg-medium: $bg-color;
-$bg-dark: func.shade($bg-color, 25%);
-$bg-very-dark: func.shade($bg-color, 50%);
+
 
 
 $primary-color: rgb(242, 239, 223);
@@ -23,6 +18,10 @@ $primary-medium: $primary-color;
 $primary-dark: func.shade($primary-color, 25%);
 $primary-very-dark: func.shade($primary-color, 50%);
 
+/*Background Colors*/
+
+$bg-color: radial-gradient(circle at 67% 83%, rgba(46,11,11, 0.25) 0%, rgba(46,11,11, 0.25) 1%,transparent 1%, transparent 5%,transparent 5%, transparent 100%),radial-gradient(circle at 24% 80%, rgba(46,11,11, 0.25) 0%, rgba(46,11,11, 0.25) 27%,transparent 27%, transparent 63%,transparent 63%, transparent 100%),radial-gradient(circle at 23% 5%, rgba(46,11,11, 0.25) 0%, rgba(46,11,11, 0.25) 26%,transparent 26%, transparent 82%,transparent 82%, transparent 100%),radial-gradient(circle at 21% 11%, rgba(46,11,11, 0.25) 0%, rgba(46,11,11, 0.25) 35%,transparent 35%, transparent 45%,transparent 45%, transparent 100%),radial-gradient(circle at 10% 11%, rgba(46,11,11, 0.25) 0%, rgba(46,11,11, 0.25) 21%,transparent 21%, transparent 81%,transparent 81%, transparent 100%),radial-gradient(circle at 19% 61%, rgba(46,11,11, 0.25) 0%, rgba(46,11,11, 0.25) 20%,transparent 20%, transparent 61%,transparent 61%, transparent 100%),radial-gradient(circle at 13% 77%, rgba(46,11,11, 0.25) 0%, rgba(46,11,11, 0.25) 63%,transparent 63%, transparent 72%,transparent 72%, transparent 100%),radial-gradient(circle at 30% 93%, rgba(46,11,11, 0.25) 0%, rgba(46,11,11, 0.25) 33%,transparent 33%, transparent 82%,transparent 82%, transparent 100%),linear-gradient(90deg, rgb(38,135,130),rgb(38,7,90));
+$bg-header-color: radial-gradient(circle at 67% 83%, rgba(69,7,7, 0.13) 0%, rgba(69,7,7, 0.13) 1%,transparent 1%, transparent 5%,transparent 5%, transparent 100%),radial-gradient(circle at 24% 80%, rgba(69,7,7, 0.13) 0%, rgba(69,7,7, 0.13) 27%,transparent 27%, transparent 63%,transparent 63%, transparent 100%),radial-gradient(circle at 23% 5%, rgba(69,7,7, 0.13) 0%, rgba(69,7,7, 0.13) 26%,transparent 26%, transparent 82%,transparent 82%, transparent 100%),radial-gradient(circle at 21% 11%, rgba(69,7,7, 0.13) 0%, rgba(69,7,7, 0.13) 35%,transparent 35%, transparent 45%,transparent 45%, transparent 100%),radial-gradient(circle at 10% 11%, rgba(69,7,7, 0.13) 0%, rgba(69,7,7, 0.13) 21%,transparent 21%, transparent 81%,transparent 81%, transparent 100%),radial-gradient(circle at 19% 61%, rgba(69,7,7, 0.13) 0%, rgba(69,7,7, 0.13) 20%,transparent 20%, transparent 61%,transparent 61%, transparent 100%),radial-gradient(circle at 13% 77%, rgba(69,7,7, 0.13) 0%, rgba(69,7,7, 0.13) 63%,transparent 63%, transparent 72%,transparent 72%, transparent 100%),radial-gradient(circle at 30% 93%, rgba(69,7,7, 0.13) 0%, rgba(69,7,7, 0.13) 33%,transparent 33%, transparent 82%,transparent 82%, transparent 100%),linear-gradient(90deg, rgb(42,219,205),rgb(51,13,112));
 $bg-overlay: rgba(35, 11, 11, 0.5);
 $bg-overlay-darker: rgba(35, 11, 11, 0.6);
 

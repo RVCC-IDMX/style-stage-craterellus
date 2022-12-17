@@ -58,20 +58,29 @@ table {
 }
 
 /* functions */
+/*Background Colors*/
 /*Link Colors*/
 /* Fonts */
 /*Font Size*/
 /* main */
 /*Backgrounds*/
 body {
-  background-image: radial-gradient(circle at 67% 83%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 1%, transparent 1%, transparent 5%, transparent 5%, transparent 100%), radial-gradient(circle at 24% 80%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 27%, transparent 27%, transparent 63%, transparent 63%, transparent 100%), radial-gradient(circle at 23% 5%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 26%, transparent 26%, transparent 82%, transparent 82%, transparent 100%), radial-gradient(circle at 21% 11%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 35%, transparent 35%, transparent 45%, transparent 45%, transparent 100%), radial-gradient(circle at 10% 11%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 21%, transparent 21%, transparent 81%, transparent 81%, transparent 100%), radial-gradient(circle at 19% 61%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 20%, transparent 20%, transparent 61%, transparent 61%, transparent 100%), radial-gradient(circle at 13% 77%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 63%, transparent 63%, transparent 72%, transparent 72%, transparent 100%), radial-gradient(circle at 30% 93%, rgba(71, 40, 40, 0.1) 0%, rgba(71, 40, 40, 0.1) 33%, transparent 33%, transparent 82%, transparent 82%, transparent 100%), linear-gradient(90deg, rgb(22, 207, 188), rgb(45, 26, 133));
+  background-image: radial-gradient(circle at 67% 83%, rgba(46, 11, 11, 0.25) 0%, rgba(46, 11, 11, 0.25) 1%, transparent 1%, transparent 5%, transparent 5%, transparent 100%), radial-gradient(circle at 24% 80%, rgba(46, 11, 11, 0.25) 0%, rgba(46, 11, 11, 0.25) 27%, transparent 27%, transparent 63%, transparent 63%, transparent 100%), radial-gradient(circle at 23% 5%, rgba(46, 11, 11, 0.25) 0%, rgba(46, 11, 11, 0.25) 26%, transparent 26%, transparent 82%, transparent 82%, transparent 100%), radial-gradient(circle at 21% 11%, rgba(46, 11, 11, 0.25) 0%, rgba(46, 11, 11, 0.25) 35%, transparent 35%, transparent 45%, transparent 45%, transparent 100%), radial-gradient(circle at 10% 11%, rgba(46, 11, 11, 0.25) 0%, rgba(46, 11, 11, 0.25) 21%, transparent 21%, transparent 81%, transparent 81%, transparent 100%), radial-gradient(circle at 19% 61%, rgba(46, 11, 11, 0.25) 0%, rgba(46, 11, 11, 0.25) 20%, transparent 20%, transparent 61%, transparent 61%, transparent 100%), radial-gradient(circle at 13% 77%, rgba(46, 11, 11, 0.25) 0%, rgba(46, 11, 11, 0.25) 63%, transparent 63%, transparent 72%, transparent 72%, transparent 100%), radial-gradient(circle at 30% 93%, rgba(46, 11, 11, 0.25) 0%, rgba(46, 11, 11, 0.25) 33%, transparent 33%, transparent 82%, transparent 82%, transparent 100%), linear-gradient(90deg, rgb(38, 135, 130), rgb(38, 7, 90));
+}
+
+header {
+  background-image: radial-gradient(circle at 67% 83%, rgba(69, 7, 7, 0.13) 0%, rgba(69, 7, 7, 0.13) 1%, transparent 1%, transparent 5%, transparent 5%, transparent 100%), radial-gradient(circle at 24% 80%, rgba(69, 7, 7, 0.13) 0%, rgba(69, 7, 7, 0.13) 27%, transparent 27%, transparent 63%, transparent 63%, transparent 100%), radial-gradient(circle at 23% 5%, rgba(69, 7, 7, 0.13) 0%, rgba(69, 7, 7, 0.13) 26%, transparent 26%, transparent 82%, transparent 82%, transparent 100%), radial-gradient(circle at 21% 11%, rgba(69, 7, 7, 0.13) 0%, rgba(69, 7, 7, 0.13) 35%, transparent 35%, transparent 45%, transparent 45%, transparent 100%), radial-gradient(circle at 10% 11%, rgba(69, 7, 7, 0.13) 0%, rgba(69, 7, 7, 0.13) 21%, transparent 21%, transparent 81%, transparent 81%, transparent 100%), radial-gradient(circle at 19% 61%, rgba(69, 7, 7, 0.13) 0%, rgba(69, 7, 7, 0.13) 20%, transparent 20%, transparent 61%, transparent 61%, transparent 100%), radial-gradient(circle at 13% 77%, rgba(69, 7, 7, 0.13) 0%, rgba(69, 7, 7, 0.13) 63%, transparent 63%, transparent 72%, transparent 72%, transparent 100%), radial-gradient(circle at 30% 93%, rgba(69, 7, 7, 0.13) 0%, rgba(69, 7, 7, 0.13) 33%, transparent 33%, transparent 82%, transparent 82%, transparent 100%), linear-gradient(90deg, rgb(42, 219, 205), rgb(51, 13, 112));
 }
 
 /*Spacing*/
 body {
-  margin-block-start: clamp(0.5rem, -0.214rem + 3.571vw, 3rem);
+  margin-block-start: clamp(2rem, 0.545rem + 7.273vw, 6rem);
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
+}
+
+body > * {
+  padding-inline: clamp(1rem, -0.818rem + 9.091vw, 6rem);
 }
 
 p {
@@ -81,7 +90,6 @@ p {
 header {
   grid-column-start: 1;
   grid-column-end: 4;
-  margin-inline-end: 2rem;
 }
 
 nav {
@@ -90,7 +98,6 @@ nav {
 }
 
 main, aside, footer {
-  background: rgba(35, 11, 11, 0.5);
   grid-column-start: 1;
   grid-column-end: 4;
 }
@@ -127,8 +134,8 @@ body {
 
 h1 {
   font-family: "Galada", cursive;
-  font-size: clamp(5.5rem, 2rem + 13vw, 10em);
-  line-height: 0.9em;
+  font-size: clamp(6rem, 3.091rem + 14.545vw, 14rem);
+  line-height: 0.7em;
   letter-spacing: -0.3rem;
   text-align: end;
   text-shadow: 4px 3px 0px rgb(26, 7, 7), 9px 8px 0px rgba(0, 0, 0, 0.15);
@@ -138,6 +145,7 @@ header h2 {
   text-align: end;
   border: none;
   max-width: 100%;
+  padding-block-end: clamp(1rem, -0.091rem + 5.455vw, 4rem);
 }
 header p {
   font-size: 1.2rem;
@@ -169,7 +177,6 @@ header .container a, header .container span, header .container p {
 /* Nav */
 nav {
   margin-block: 3rem;
-  background: rgba(35, 11, 11, 0.5);
   border: 1px solid white;
 }
 nav ul {
