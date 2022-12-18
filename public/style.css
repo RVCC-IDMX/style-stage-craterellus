@@ -260,12 +260,33 @@ h1::before {
   font-size: calc(clamp(5.5rem, clamp(5.5rem, 2rem + 13vw, 10em), 20vh) - 2rem);
 }
 
+/*Blockquote*/
+blockquote {
+  background: rgba(35, 11, 11, 0.5);
+}
+
 /*Grid: Modern CSS Spotlight*/
 section.container ul {
   text-align: center;
+  font-weight: bold;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 0.2rem;
+  border-radius: 1rem;
+  box-shadow: inset -1rem -1rem 1rem rgba(0, 0, 0, 0.3);
+  margin-block-end: 2rem;
+  background: rgba(35, 11, 11, 0.5);
+}
+section.container ul li {
+  padding-block: 0.5rem;
+  transition: transform 200ms ease-in-out;
+}
+section.container ul li:hover {
+  background-color: rgba(19, 6, 119, 0.7);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
+  transform: scale(1.1) translateY(-5px);
 }
 
 /*Footer*/
