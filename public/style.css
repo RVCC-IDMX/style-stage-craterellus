@@ -193,8 +193,8 @@ header .container a, header .container span, header .container p {
 
 /* Nav */
 nav {
-  background-color: rgba(19, 6, 119, 0.4);
-  margin-block: 3rem;
+  background-color: rgba(27, 242, 192, 0.15);
+  margin-block-end: clamp(2.5rem, 0.382rem + 10.588vw, 7rem);
 }
 nav ul {
   list-style: none;
@@ -202,7 +202,7 @@ nav ul {
   font-size: clamp(1.8rem, 1rem + 4vw, 3.5rem);
   text-shadow: 4px 3px 0px rgba(26, 7, 7, 0.9), 9px 8px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
-  padding: none;
+  padding-block: clamp(1rem, 0.529rem + 2.353vw, 2rem);
 }
 nav ul li {
   display: inline-block;
@@ -222,7 +222,7 @@ nav ul li a {
   color: rgb(242, 239, 223);
 }
 nav ul li:hover {
-  transform: scale(1.1) translateY(-0.5rem);
+  transform: scale(1.1) translateY(-0.4rem);
 }
 
 /*Links*/
@@ -230,6 +230,7 @@ a {
   color: rgb(248, 252, 136);
   text-decoration: none;
   font-weight: bold;
+  letter-spacing: 0.04em;
 }
 
 a:hover {
@@ -245,6 +246,7 @@ a:hover {
   max-width: clamp(15rem, 7.941rem + 35.294vw, 30rem);
   font-size: clamp(1.1rem, 0.529rem + 2.353vw, 2rem);
   padding: 1.5rem;
+  border: 3px solid rgba(27, 242, 192, 0.15);
   border-radius: 1rem;
   transition: transform 200ms ease-in-out;
   color: rgb(242, 239, 223);

@@ -157,15 +157,15 @@ header {
 /* Nav */
 
 nav {
-    background-color: var.$button-hover-overlay;
-    margin-block: 3rem;
+    background-color: var.$bg-overlay-light;
+    margin-block-end: clamp(2.5rem, 0.382rem + 10.588vw, 7rem);
     ul {
         list-style: none;
         font-family: var.$small-header-font;
         font-size: clamp(1.8rem, 1rem + 4vw, 3.5rem);
         text-shadow: 4px 3px 0px var.$footer-bg, 9px 8px 0px rgba(0,0,0,0.15);
         text-align: center;
-        padding:none;
+        padding-block: clamp(1rem, 0.529rem + 2.353vw, 2rem);
         li {
             display: inline-block;
             line-height: 1.1em;
@@ -185,7 +185,7 @@ nav {
             color: var.$primary-color;
         }
         li:hover {
-            transform: scale(1.1) translateY(-0.5rem);
+            transform: scale(1.1) translateY(-0.4rem);
         }
     }
 }
@@ -195,6 +195,7 @@ a {
     color: var.$unvisited-color;
     text-decoration: none;
     font-weight: bold;
+    letter-spacing: 0.04em;
 }
 
 a:hover {
@@ -211,6 +212,7 @@ a:hover {
     max-width: clamp(15rem, 7.941rem + 35.294vw, 30rem);
     font-size: clamp(1.1rem, 0.529rem + 2.353vw, 2rem);
     padding: 1.5rem;
+    border: 3px solid var.$bg-overlay-light;
     border-radius: 1rem;
     transition: transform 200ms ease-in-out;
     color: var.$primary-color;
