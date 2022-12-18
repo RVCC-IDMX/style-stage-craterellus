@@ -222,7 +222,7 @@ nav ul li a {
   color: rgb(242, 239, 223);
 }
 nav ul li:hover {
-  transform: scale(1.1) translateY(-0.4rem);
+  transform: scale(1.05) translateY(-0.2rem);
 }
 
 /*Links*/
@@ -256,7 +256,7 @@ a:hover {
 .link-guidelines:hover, .link-downloadcss:hover, .link-downloadhtml:hover, .link-codepen:hover {
   background-color: rgba(19, 6, 119, 0.7);
   color: rgb(242, 239, 223);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .link-guidelines::before, .link-downloadcss::before, .link-downloadhtml::before, .link-codepen::before {
@@ -343,7 +343,7 @@ section.container ul li:hover {
   background-color: rgba(19, 6, 119, 0.7);
   border-radius: 1rem;
   box-shadow: 0.5rem 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /*Steps to contribute*/
@@ -380,4 +380,15 @@ ol li::before {
 }
 .page-footer ul a {
   text-align: center;
+}
+
+/*Media Queries*/
+@media (prefers-reduced-motion) {
+  a:hover {
+    transform: none;
+    color: rgb(242, 239, 223);
+  }
+  li:hover {
+    transform: none;
+  }
 }
