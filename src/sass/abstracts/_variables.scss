@@ -2,20 +2,13 @@
 
 @use "./functions" as func;
 
-@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Galada&family=Courgette&display=swap');
 
 
 
 
 $primary-color: rgb(242, 239, 223);
-$primary-very-light: func.tint($primary-color, 50%);
-$primary-light: func.tint($primary-color, 25%);
 $primary-dark: func.shade($primary-color, 15%);
-$primary-very-dark: func.shade($primary-color, 50%);
 
 /*Background Colors*/
 
