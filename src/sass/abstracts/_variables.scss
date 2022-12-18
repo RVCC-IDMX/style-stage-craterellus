@@ -14,8 +14,7 @@
 $primary-color: rgb(242, 239, 223);
 $primary-very-light: func.tint($primary-color, 50%);
 $primary-light: func.tint($primary-color, 25%);
-$primary-medium: $primary-color;
-$primary-dark: func.shade($primary-color, 25%);
+$primary-dark: func.shade($primary-color, 15%);
 $primary-very-dark: func.shade($primary-color, 50%);
 
 /*Background Colors*/

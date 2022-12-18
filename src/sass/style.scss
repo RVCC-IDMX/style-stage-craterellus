@@ -237,6 +237,21 @@ h1::before {
 
 blockquote {
     background: var.$bg-overlay;
+    color: var.$primary-dark;
+    max-width: 45ch;
+    padding: 2rem;
+    margin-block-end: 3rem;
+    border-radius: 1rem;
+    p {
+        padding: 0;
+    }
+    strong {
+        font-weight: bold;
+        font-family: var.$small-header-font;
+        font-size: 1.7rem;
+        color: rgb(255, 255, 255);
+        padding-inline-end: .3rem;
+    }
 }
 
 
@@ -249,21 +264,21 @@ section.container {
         font-weight: bold;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: .2rem;
+        gap: .4rem;
         border-radius: 1rem;
         box-shadow: inset -1rem -1rem 1rem rgba(0, 0, 0, 0.3);
         margin-block-end: 2rem;
         background: var.$bg-overlay;
+        max-width: 70ch;
         li {
             padding-block: .5rem;
             transition: transform 200ms ease-in-out;
         }
         li:hover{
             background-color: rgba(19, 6, 119, 0.7);
-            border: 2px solid rgba(255, 255, 255, 0.3);
+            
             border-radius: 1rem;
             box-shadow: .5rem .3rem .3rem rgba(0, 0, 0, 0.2);
-            transform: scale(1.1) translateY(-5px);
         }
     }
 }
@@ -300,7 +315,6 @@ section.container {
             a:hover {
                 background-color: rgba(10, 240, 229, 0.2);
                 text-decoration: none;
-               
             }
         }
     }
