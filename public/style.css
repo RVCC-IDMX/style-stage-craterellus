@@ -346,6 +346,14 @@ section.container ul li:hover {
   transform: scale(1.1);
 }
 
+/*Steps to contribute*/
+ol li {
+  padding: 1rem;
+}
+ol li::before {
+  content: "✦";
+}
+
 /*Footer*/
 .page-footer {
   background: rgba(26, 7, 7, 0.9);

@@ -326,6 +326,18 @@ section.container {
     }
 }
 
+/*Steps to contribute*/
+
+ol {
+    li {
+        padding: 1rem;
+
+    }
+    li::before {
+        content: '✦';
+    }
+}
+
 /*Footer*/
 .page-footer {
     background: var.$footer-bg;
