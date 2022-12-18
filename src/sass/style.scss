@@ -10,6 +10,7 @@ body {
 
 header {
     background-image: var.$bg-header-color;
+    box-shadow: inset 0 -6rem rgba(27, 0, 0, 0.8);
 }
 
 /*Spacing*/
@@ -39,6 +40,10 @@ header {
     h1 {
         margin-block-start: -1rem;
     }
+    p {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 main, aside {
@@ -65,7 +70,26 @@ p {
 
 svg {
     max-width: 1rem;
+    fill: var.$primary-color;
+    transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
 }
+
+.link-github:hover {
+    svg {
+        transform: scale(1.3) rotate(-10deg);
+    }
+}
+
+h2::before {
+    content: '✦';
+}
+
+header{
+    h2::before {
+        content: none;
+    }
+}
+
 
 /* Colors */
 body {
@@ -87,7 +111,7 @@ h1 {
     line-height: 0.7em;
     letter-spacing: -0.3rem;
     text-align: end;
-    text-shadow: 4px 3px 0px rgb(26, 7, 7), 9px 8px 0px rgba(0,0,0,0.15);
+    text-shadow: 4px 3px 0px var.$footer-bg, 9px 8px 0px rgba(0,0,0,0.15);
 }
 
 header {
@@ -124,7 +148,7 @@ h3, h4 {
 header {
     .container {
         a, span, p {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
     }
 }
@@ -147,11 +171,11 @@ nav {
             a:hover {
                 background-color: var.$bg-overlay-darker;
                 color: var.$primary-color;
-                text-decoration: none
+                text-decoration: none;
             }
             a:visited {
                 color: var.$primary-color;
-                text-decoration: none
+                text-decoration: none;
             }
 
         }
@@ -172,15 +196,7 @@ a {
 
 a:hover {
     color: var.$hover-color;
-    text-decoration: underline;
-}
-
-a:visited {
-    color: var.$visited-color;
-}
-
-a:active {
-    color: var.$unvisited-color;
+    text-decoration: none;
 }
 
 /* Skip Link */
@@ -229,4 +245,9 @@ section.container {
         grid-template-columns: 1fr 1fr 1fr;
         gap: .2rem;
     }
+}
+
+/*Footer*/
+.page-footer {
+    background: var.$footer-bg;
 }
