@@ -193,13 +193,14 @@ header .container a, header .container span, header .container p {
 
 /* Nav */
 nav {
+  background-color: rgba(19, 6, 119, 0.4);
   margin-block: 3rem;
-  border: 1px solid white;
 }
 nav ul {
   list-style: none;
   font-family: "Courgette", cursive;
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 1rem + 4vw, 3.5rem);
+  text-shadow: 4px 3px 0px rgba(26, 7, 7, 0.9), 9px 8px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
   padding: none;
 }
@@ -207,9 +208,9 @@ nav ul li {
   display: inline-block;
   line-height: 1.1em;
   padding-block: 0.8rem;
+  transition: transform 200ms ease-in-out;
 }
 nav ul li a:hover {
-  background-color: rgba(35, 11, 11, 0.6);
   color: rgb(242, 239, 223);
 }
 nav ul li a:visited {
@@ -217,8 +218,11 @@ nav ul li a:visited {
 }
 nav ul li a {
   text-decoration: none;
-  padding: 0.3rem;
+  padding-inline: clamp(0.3rem, 0.065rem + 1.176vw, 0.8rem);
   color: rgb(242, 239, 223);
+}
+nav ul li:hover {
+  transform: scale(1.1) translateY(-0.5rem);
 }
 
 /*Links*/

@@ -157,20 +157,21 @@ header {
 /* Nav */
 
 nav {
+    background-color: var.$button-hover-overlay;
     margin-block: 3rem;
-    border: 1px solid white;
     ul {
         list-style: none;
         font-family: var.$small-header-font;
-        font-size: 2rem;
+        font-size: clamp(1.8rem, 1rem + 4vw, 3.5rem);
+        text-shadow: 4px 3px 0px var.$footer-bg, 9px 8px 0px rgba(0,0,0,0.15);
         text-align: center;
         padding:none;
         li {
             display: inline-block;
             line-height: 1.1em;
             padding-block: .8rem;
+            transition: transform 200ms ease-in-out;
             a:hover {
-                background-color: var.$bg-overlay-darker;
                 color: var.$primary-color;
             }
             a:visited {
@@ -180,8 +181,11 @@ nav {
         }
         li a {
             text-decoration: none;
-            padding: .3rem;
+            padding-inline: clamp(0.3rem, 0.065rem + 1.176vw, 0.8rem);
             color: var.$primary-color;
+        }
+        li:hover {
+            transform: scale(1.1) translateY(-0.5rem);
         }
     }
 }
