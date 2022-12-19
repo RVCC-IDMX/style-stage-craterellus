@@ -381,12 +381,26 @@ ol li::before {
 }
 
 /*Media Queries*/
-@media (prefers-reduced-motion) {
+@media (prefers-reduced-motion: reduce) {
   a:hover {
-    transform: none;
+    transform: scale(1) rotate(0);
     color: rgb(242, 239, 223);
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
   }
   li:hover {
-    transform: none;
+    transform: scale(1) rotate(0);
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+  }
+  *, *::before, *::after {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
   }
 }
